@@ -1,0 +1,55 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main h1{
+    color: aliceblue;
+}
+
+h2{
+    color: darkolivegreen;
+}
+
+p{
+    color: cornflowerblue;
+}
+
+footer p{
+    color: blueviolet;
+}
+
+#star{
+    color:darkgoldenrod;
+}
+
+#heart{
+    color: crimson;
+}
+
+#crescent{
+    color:blueviolet;
+    font-size: 10pt;
+}
+
+#sp{
+    color: black;
+}
+
+#he{
+    color: darkred;
+}
+
+.dia{
+    color: rgb(44, 121, 121);
+}
+
+.spa{
+    color: chartreuse !important;
+    color: rgba(63, 55, 72, 0.3);
+}
+.hl{
+    font-style: italic;
+}
+.try{
+    color: coral;
+}
