@@ -1,0 +1,16 @@
+body{
+    color: antiquewhite;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 10pt;
+}
+nav a{
+    color: darkgoldenrod;
+}
+
+main a{
+    color: darkgoldenrod;
+}
+
+footer{
+    color: rgb(122, 100, 144);
+}
