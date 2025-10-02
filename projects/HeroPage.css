@@ -3,14 +3,15 @@ body{
     background-color: rgb(223, 236, 250);
     color: rgb(52, 52, 158);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 12pt;
+    font-size: 11pt;
 }
 h1{
     color: rgb(215, 164, 35);
-    font-size: 28pt;
+    font-size: 30pt;
 }
 nav a{
     color: rgb(215, 164, 35);
+    font-size: 13pt;
 }
 
 main a{
@@ -28,7 +29,7 @@ footer{
 }
 
 .gi{
-    font-size: 13.5pt;
+    font-size: 12.5pt;
     color: rgb(5, 5, 89);
 }
 
