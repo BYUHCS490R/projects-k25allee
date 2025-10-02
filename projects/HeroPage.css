@@ -1,16 +1,59 @@
+
 body{
-    color: antiquewhite;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 10pt;
+    background-color: rgb(223, 236, 250);
+    color: rgb(52, 52, 158);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 12pt;
+}
+h1{
+    color: rgb(215, 164, 35);
+    font-size: 28pt;
 }
 nav a{
-    color: darkgoldenrod;
+    color: rgb(215, 164, 35);
 }
 
 main a{
-    color: darkgoldenrod;
+    color: rgb(215, 164, 35);
 }
 
 footer{
-    color: rgb(122, 100, 144);
+    color: rgb(44, 45, 53);
+}
+
+.Aff{
+    font-style: italic;
+    font-family: cursive;
+    font-size: 13pt;
+}
+
+.gi{
+    font-size: 13.5pt;
+    color: rgb(5, 5, 89);
+}
+
+#gold{
+    color: rgb(215, 164, 35);
+}
+
+#mo{
+    color: rgb(39, 194, 194);
+}
+#li{
+    color: rgb(251, 153, 16);
+}
+#in{
+    color: rgb(159, 93, 220);
+}
+#su{
+    color: rgb(118, 157, 107);
+}
+#fo{
+    color: blue;
+}
+#na{
+    color: crimson;
+}
+#sn{
+    color: cornflowerblue;
 }
