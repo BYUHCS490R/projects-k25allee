@@ -1,0 +1,21 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-image: url(pinkleaf.jpg);
+    background-repeat: repeat;
+    background-color: rgb(169, 94, 94);
+    color: rgb(3, 28, 24);
+}
+
+main {
+    background-image: url(Teacup.jpg);
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+
+/*footer {
+    background-image: url(Teacup.jpg) no-repeat top right;
+} */
+
+.mylist {
+    list-style-image: url(ministar.png);
+}
