@@ -1,0 +1,33 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 13pt;
+    color: rgb(140, 8, 50);
+    background-image: url(pinkpattern.jpg);
+    background-repeat: repeat;
+    background-color: lightpink;
+}
+
+header {
+
+}
+
+
+.homepic {
+    background-image: url(blossomsmall.jpg);
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+
+nav a {
+    color: rgb(26, 84, 43);
+    text-decoration: none;
+}
+
+.current {
+    color: rgb(109, 49, 155);
+    
+}
+
+.mylist {
+    list-style-image: url(flower.png);
+}
