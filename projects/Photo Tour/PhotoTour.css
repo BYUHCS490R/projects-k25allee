@@ -7,11 +7,9 @@ body{
     background-color: lightpink;
 }
 
-header {
-
+main {
+    font-size: 12pt;
 }
-
-
 .homepic {
     background-image: url(blossomsmall.jpg);
     background-repeat: no-repeat;
@@ -20,7 +18,6 @@ header {
 
 nav a {
     color: rgb(26, 84, 43);
-    text-decoration: none;
 }
 
 .current {
