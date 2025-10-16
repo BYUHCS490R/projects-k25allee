@@ -18,17 +18,21 @@ header {
 nav a {
     color: rgb(255, 255, 255);
     text-decoration: none;
+    font-weight: 600;
 
 }
 
 nav a:hover {
     text-decoration: underline;
-    color: blueviolet;
+    color: rgb(183, 137, 227);
 }
 
 .pic {
     float: right;
     padding: auto;
+    top: -10;
+    text-transform: capitalize;
+    font-style: italic;
 }
 
 .logo {
@@ -47,7 +51,7 @@ nav a:hover {
     margin: 0;
     width: 100%;
     position: fixed;
-    border-bottom: rgb(234, 172, 28) solid 5px;
+    border-bottom: rgb(171, 21, 48) solid 5px;
     
 }
 #wrapper {
@@ -63,4 +67,5 @@ nav a:hover {
 main {
     margin: 128px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    line-height: 1.5;
 }
