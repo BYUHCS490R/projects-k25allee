@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <link rel="stylesheet" href="CSSGrid.css">
+</head>
+<body>
+    <div id="wrapper">
+    <header>
+            <h1>CSS Grid</h1>
+        </header>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+        <main>
+            <h2>Practice</h2>
+            <div class="parent">
+            <p class="child">Child1</p>
+            <p class="child">Child2</p>
+            <p class="child">Child3</p>
+            </div>
+            
+            <p>As long as it's a block tag, it'll work.</p>
+            <hr>
+            <h2>Answers</h2>
+            <p>
+                1. The outside box is the parent and can control where you put the direct "kids," but they don't control the "grandkids." For example, if you want to create 3 columns or something else in a header or main tag. For both flex and grid, we need to know who/what is the parent and who/what is the child. Div tags can be used to be a new parent and separate things. For example, the parent tag will keep how big the columns are, but changes from the kids would take up their own space.
+                <br>2. The 2 main differences between grid and flex are that grid is 2-dimensional (columns & rows) and flex is 1-dimensional (only columns), and with grid it tells the kids their size while flex lets the kids decide what size they want to be and then decides how the layout goes.
+            </p>
+        </main>
+        <footer>
+            <p>&copy; 2025 Alyssa Lee</p>
+        </footer>
+    </div>
+    
+</body>
+</html>

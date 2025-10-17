@@ -1,0 +1,41 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    /*Can use px, %, or fr (fractions) to fivide columns */
+    gap: 10px;
+}
+
+.child {
+    background-color: rgb(227, 205, 255);
+    
+    text-align: center;
+}
+
+#wrapper {
+    display: grid;
+    grid-template-areas:
+        "top top top"
+        "lside middle rside"
+        "bottom bottom bottom"
+    ;
+}
+
+header {
+    grid-area: top;
+}
+
+main {
+    grid-area: middle;
+}
+
+nav {
+    grid-area: lside;
+}
+
+footer {
+    grid-area: bottom;
+}
