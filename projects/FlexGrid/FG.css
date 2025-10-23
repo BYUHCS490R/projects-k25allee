@@ -43,7 +43,7 @@ main {
     border: thin solid coral;
     border-radius: 3px;
     box-shadow: 3px 4px 6px;
-    margin: 5px;
+    margin: 15px;
 }
 
 .cards img {
