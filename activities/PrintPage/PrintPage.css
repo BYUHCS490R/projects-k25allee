@@ -1,0 +1,62 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+}
+
+header {
+    background-color: blueviolet;
+    color: white;
+    padding: 10px;
+}
+header h1 {
+    margin: 0; /*Gets rid of white/empty space with bg color */
+    
+}
+
+.all {
+    display: flex;
+    gap: 15px
+}
+
+.sidebar {
+    width: 300px;
+}
+
+main {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.cards {
+    justify-content: space-evenly;
+    width: 200px;
+    border: thin rgb(140, 97, 199) solid;
+    border-radius: 4px;
+    box-shadow: 2px 3px 4px cornflowerblue;
+    margin: 10px;
+}
+
+.cards img {
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: black;
+    
+}
+
+nav a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    background-color: black;
+    color: aqua;
+}
+
+nav a:hover {
+    background-color: aqua;
+    color: black;
+    text-decoration: underline;
+}
