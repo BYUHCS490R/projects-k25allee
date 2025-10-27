@@ -60,3 +60,23 @@ nav a:hover {
     color: black;
     text-decoration: underline;
 }
+
+@media ONLY screen AND (max-width: 500px) {
+    body {
+        nav {
+            flex-direction: column;
+        }
+        .all {
+            flex-direction: column-reverse;
+        }
+        .cards {
+            width: 100%;
+        }
+        .sidebar {
+            width: 100%;
+        }
+        .first {
+            order: -1;
+        }
+    }
+} /*targeting phone view, could also be used for printer page */
