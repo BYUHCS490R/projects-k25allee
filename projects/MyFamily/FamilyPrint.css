@@ -1,6 +1,7 @@
 body {
     margin: 0;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
 }
 
 header {
@@ -15,10 +16,7 @@ header h1 {
 }
 
 nav {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    background-color: rgb(147, 115, 204);
+    display: none;
 }
 
 nav a {
@@ -55,15 +53,14 @@ nav a:hover {
 main {
     display: flex;
     flex-flow: row wrap;
-    width: 80%;
+    width: 100%;
 }
 
 .info {
     border: solid thin cornflowerblue;
     border-radius: 3px;
     margin: 5px;
-    box-shadow: 2px 3px 4px black;
-    width: 250px;
+    width: 220px;
     text-align: center;
 }
 .info img {
