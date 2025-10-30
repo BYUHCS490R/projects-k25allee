@@ -1,6 +1,7 @@
 body {
     margin: 0;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: rgb(255, 255, 255);
 }
 
 header {
@@ -65,6 +66,7 @@ main {
     box-shadow: 2px 3px 4px black;
     width: 250px;
     text-align: center;
+    background-color: aliceblue;
 }
 .info img {
     width: 100%;
