@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tables</title>
+    <link rel="stylesheet" href="Tables.css">
 </head>
 <body>
     <header>
@@ -16,8 +17,9 @@
     </nav>
     <main>
         <br>
-        <table border="1">
-            <thread>
+        <table class="schedule">
+            <caption>My Class Schedule</caption>
+            <thead>
                 <tr>
                     <th colspan="6">Fall 2025</th>
                 </tr>
@@ -29,7 +31,7 @@
                     <th>Location</th>
                     <th>Credits</th>
                 </tr>    
-            </thread>
+            </thead>
             <tbody>
                 <tr>
                 <td>Magic</td>
@@ -39,9 +41,9 @@
                 <td>Classroom49</td>
                 <td>3</td>
             </tr>
-            <tr>
+            <tr class="other">
                 <td>Magic</td>
-                <td rowspan="2">101</td>
+                <td rowspan="2 row">101</td>
                 <td>Potions</td>
                 <td>TTh</td>
                 <td>Dungeons</td>
@@ -54,7 +56,7 @@
                 <td>Greenhouses</td>
                 <td>3</td>
             </tr>
-            <tr>
+            <tr class="other">
                 <td>Magic</td>
                 <td>101</td>
                 <td>Charms</td>
@@ -84,6 +86,11 @@
             1. They're useful for when we're listing data, statistics, scores, basically any time you can put things in rows and columns. Tables go row by row and can even be sectioned like our main content.
             <br>2. You don't use a table to organize/layout your page because it can get confusing to have tables within tables. It can be really tedious when you have to go back and edit the html anytime. Tables aren't very friendly on mobile devices.
             <br>3. When there are people who have disabilities and use screen users because it might be more difficult to read tables than other information on your page. Th is table header and it makes your page accessible, so the screen reader will associate the correct table values with the categories.
+        </p>
+        <h2>Answers 2:</h2>
+        <p>
+            1. We don't use the border attribute because it has been taken out of html. It only works because it's meant for old web pages, not newer web pages.
+            <br>2. You use psuedo-classes or colons to help you select different/specific sections on your web page to be able to change things. You use the line of command nth-child with even or odd in parantheses to be able to change the color of multiple rows that aren't right next to each other/touching.
         </p>
     </main>
     <footer>

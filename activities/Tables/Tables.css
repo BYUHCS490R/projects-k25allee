@@ -1,3 +1,55 @@
 body {
     font-family: 'Courier New', Courier, monospace;
 }
+
+.schedule {
+    background-color: cadetblue;
+    border-spacing: 0;
+    border-top: thin solid black;
+}
+
+.schedule td, .schedule th {
+    padding: 5px;
+}
+
+.schedule thead tr {
+    background-color: blueviolet;
+    color: white;
+}
+
+.schedule tbody tr {
+    background-color: aliceblue;
+    color: black;
+}
+
+.schedule tbody tr:nth-child(odd) {
+    background-color: aqua;
+}
+
+.schedule tfoot tr {
+    background-color: blanchedalmond;
+    color: black;
+}
+
+/*.schedule {
+    border: thin black solid;
+    border-spacing: 0;
+    border-collapse: collapse;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    caption-side: top;
+}
+
+.schedule th, .schedule td {
+    border: 3px solid blue;
+    padding: 5px;
+    height: 30px;
+    vertical-align: top;
+
+}
+
+.row {
+    vertical-align: top;
+} */
