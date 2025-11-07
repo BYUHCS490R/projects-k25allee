@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="Forms.css">
+</head>
+<body>
+    <header>
+        <h1>Forms</h1>
+    </header>
+    <nav>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+    </nav>
+    <main>
+        <br>
+        <form action="Formcontrol.html" method="post">
+            <div>
+                <label for="fullname">Full Name: </label>
+                <input type="text" name="name" id="fullname" placeholder="Full Name">    
+            </div>
+            <div>
+                <label for="email">Email: </label>
+                <input type="email" name="email" id="email" value="your@email.com">
+            </div>
+            <div>
+                <label for="pass">Password: </label>
+                <input type="password" name="pass" id="pass">
+            </div>
+            <div>
+                <label for="state">State: </label>
+                <select name="state" id="state">
+                    <option value="None"> </option>
+                    <option value="HI">California</option>
+                    <option value="HI">Hawai'i</option>
+                    <option value="HI">Utah</option>
+                </select>
+            </div>
+            <div>
+                <label><input type="checkbox" name="agree"> I agree to the terms.</label>
+            </div>
+            <div>
+                Gender: 
+                <label><input type="radio" name="gender" value="male">Male</label>
+                <label><input type="radio" name="gender" value="female">Female</label>
+            </div>
+            <div>
+                <label for="comments">Comments</label>
+                <textarea name="comments" id="comments"></textarea>
+            </div>
+            <div>
+                <input type="submit" value="Sign Up">
+            </div>
+        </form>
+        <hr>
+        <h2>Answers Day 1:</h2>
+        <p>
+            1. The "action" attribute specifies where the form/data should be sent when it gets submitted.
+            <br>2. The "method" attribute helps to specify the (HTTP) method that is used to send the form data to whatever server you have put down, using Get and Post.
+            <br>3. The get will show your information in the url when you input data while Post will not show it. Get broadcasts what you're inputting, which means if you're just using a public wifi, someone can tune in and see your information. Https makes websites more secure, it scrambles your information so people can't see it while it's traveling. Since https will scramble your stuff, it doesn't neccesarily matter which one you use, but there's a difference between your data being shown in the url or not. Post is when our action is supposed to change/add/update/delete something or when we don't want our info just on display. Get is when you're just reading things (like looking up information and observing it) or sharing a search that you just did with someone else.
+            <br>Other: After the "?" in an url it is called the query (q=), which is asking a question.
+        </p>
+    </main>
+    <footer>
+        <p>&copy; 2025 Alyssa Lee</p>
+    </footer>
+</body>
+</html>
