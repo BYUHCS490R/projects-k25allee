@@ -1,3 +1,62 @@
 body {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+
+fieldset {
+    background-color:aliceblue;
+    width: 80%;
+    margin: auto;
+}
+
+legend {
+    background-color: rgb(125, 143, 184);
+    color: white;
+    padding: 5px;
+}
+
+.formrow, .checkrow {
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.formrow label {
+    width: 150px;
+    text-align: right;
+}
+
+.formrow input:not([type='submit']), .formrow select, .formrow textarea {
+    padding: 5px 10px;
+    background-color: aquamarine;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.formrow input:not([type='submit']):focus, .formrow select:focus, .formrow textarea:focus {
+    background-color: blueviolet;
+    color: white;
+}
+
+.formrow input[type='submit'] {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: aqua;
+    padding: 5px;
+}
+
+.spacer {
+    width: 150px;
+    text-align: right;
+}
+
+@media ONLY screen AND (max-width: 480px) {
+    .formrow, .checkrow {
+        flex-direction: column;
+    }
+
+    fieldset {
+        width: 95%;
+    }
+
+    .formrow label, .spacer {
+        text-align: left;
+    }
+}
