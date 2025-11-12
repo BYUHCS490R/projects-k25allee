@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Project</title>
+    <link rel="stylesheet" href="FormCSS.css">
+</head>
+<body>
+    <header>
+        <h1>Forms Project</h1>
+    </header>
+    <main>
+        <br>
+        <form action="Formresults.html" method="post">
+            <fieldset>
+                <legend>Info Box</legend>
+                <div class="rows">
+                    <label for="name">Full Name: </label>
+                    <input type="text" name="name" id="name" placeholder="Full Name">
+                </div>
+                <div class="rows">
+                    <label for="email">Email: </label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div class="rows">
+                    <label for="passw">Password: </label>
+                    <input type="password" name="passw" id="passw">
+                </div>
+                <div class="rows">
+                    <label for="date">Date: </label>
+                    <input type="datetime-local" name="date" id="date">
+                </div>
+            </fieldset>
+            <div class="other">
+                <div class="rows">
+                    <label for="topic">Topic here: </label>
+                    <select name="topic" id="topic">
+                        <option value="None">&nbsp;</option>
+                        <option value="1">Example</option>
+                        <option value="2">Another</option>
+                        <option value="3">Something</option>
+                    </select>
+                </div>
+                <div class="checkrows">
+                    <div class="space"></div>
+                    <label><input type="checkbox" name="agreement">I agree that all the information here is acurate.</label>
+                </div>
+                <div class="checkrows">
+                    <div class="space"></div>
+                    <label><input type="radio" name="option" value="yes">Yes</label>
+                    <label><input type="radio" name="option" value="no">No</label>
+                </div>
+                <div class="rows">
+                    <label for="comments">Comments</label>
+                    <textarea name="comments" id="comments"></textarea>
+                </div>
+                <div class="rows">
+                    <div class="space"></div>
+                    <input type="submit" value="Sign Up">
+                </div>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2025 Alyssa Lee</p>
+    </footer>
+</body>
+</html>
