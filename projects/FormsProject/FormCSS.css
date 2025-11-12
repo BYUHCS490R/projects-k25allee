@@ -17,6 +17,8 @@ fieldset {
     background-color: lavender;
     box-shadow: 4px 5px 2px rgb(142, 142, 167);
     border-radius: 5px;
+    width: 80%;
+    margin: auto;
 }
 legend {
     background-color: rgb(121, 121, 171);
