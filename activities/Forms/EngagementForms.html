@@ -17,7 +17,7 @@
     </nav>
     <main>
         <br>
-        <form action="Formcontrol.html" method="post">
+        <form action="Formcontrol.html" method="post" id="Form">
             <fieldset>
                 <legend>Sign Up</legend>
             <div class="formrow">
@@ -31,6 +31,10 @@
             <div class="formrow">
                 <label for="pass">Password: </label>
                 <input type="password" name="pass" id="pass">
+            </div>
+            <div class="formrow">
+                <label for="age">Age: </label>
+                <input type="datalist" name="age" id="age">
             </div>
             <div class="formrow">
                 <label for="state">State: </label>
@@ -56,10 +60,39 @@
             </div>
             <div class="formrow">
                 <div class="spacer"></div>
-                <input type="submit" value="Sign Up">
+                <input type="submit" value="Submit">
             </div>
             </fieldset>
         </form>
+        <script>
+            document.getElementById('Form').addEventListener('submit',function(event) {
+                event.preventDefault();
+                
+                const fullname = document.getElementById('fullname').value;
+                const email = document.getElementById('email').value;
+                const passowrd = document.getElementById('pass').value;
+
+                if (!fullname || !email) {
+                    alert("You need a name and email.");
+                    return;
+                }
+                if (!age || age <18) {
+                    alert("You need to be 18.");
+                    return;
+                }
+
+                const FormData = {
+                    name: fullname,
+                    email: email,
+                    password: pass,
+                    aga: age
+                }
+
+                
+                alert("Form submitted");
+                console.log(FormData);
+            });
+        </script>
         <hr>
         <h2>Answers Day 1:</h2>
         <p>
@@ -74,9 +107,17 @@
             <br>2. With just one or two added properties, our page is able to smoothly adjust from desktop to mobile and back. It is a more fast/efficient way to arrange our page/make our page look good on either screen.
             <br>Different html5 form controls: date, email, phone, datalist, color, number, range, etc.
         </p>
+        <h2>Answers Day 3:</h2>
+        <p>
+            1. Javascript is a programming language like C++ and Python. It got it's name from a fight between two companies who wanted web dominance. The company Sun Microsystems made the programming language and it was named after someone named Java, so that people would associate it with the web.
+            <br>2. Two ways you can run Javascript are in a browser (with a html page)/in the DOM and Node js that allows us to do it on the backend/run it like Python.
+            <br>3. The most popular front-end js library was the jQuery library, which did all the checks and would run the right code for whatever browser was being used.
+            <br>4. The most popular front-end js library now is React, which is open-source, and is used to build both desktop and mobile webpages. React native can help to load your web page/browser in a web application. Electrum makes VSC work with html, css, etc.
+        </p>
     </main>
     <footer>
         <p>&copy; 2025 Alyssa Lee</p>
     </footer>
+    
 </body>
 </html>
