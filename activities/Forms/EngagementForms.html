@@ -16,6 +16,7 @@
         <a href="#">Link</a>
     </nav>
     <main>
+        <div id="message"></div>
         <br>
         <form action="Formcontrol.html" method="post" id="Form">
             <fieldset>
@@ -34,7 +35,13 @@
             </div>
             <div class="formrow">
                 <label for="age">Age: </label>
-                <input type="datalist" name="age" id="age">
+                <input type="text" name="age" id="age" list="age_options">
+                <datalist id="age_options">
+                    <option value="18"></option>
+                    <option value="19"></option>
+                    <option value="20"></option>
+                    <option value="21"></option>
+                </datalist>
             </div>
             <div class="formrow">
                 <label for="state">State: </label>
@@ -64,36 +71,7 @@
             </div>
             </fieldset>
         </form>
-        <script>
-            document.getElementById('Form').addEventListener('submit',function(event) {
-                event.preventDefault();
-                
-                const fullname = document.getElementById('fullname').value;
-                const email = document.getElementById('email').value;
-                const pass = document.getElementById('pass').value;
-                const age = document.getElementById('age').value;
-
-                if (!fullname || !email) {
-                    alert("You need a name and email.");
-                    return;
-                }
-                if (!age || age <18) {
-                    alert("You need to be 18.");
-                    return;
-                }
-
-                const FormData = {
-                    name: fullname,
-                    email: email,
-                    password: pass,
-                    age: age
-                }
-
-                
-                alert("Form submitted");
-                console.log(FormData);
-            });
-        </script>
+        <script src="Form.js"></script>
         <hr>
         <h2>Answers Day 1:</h2>
         <p>
@@ -114,6 +92,11 @@
             <br>2. Two ways you can run Javascript are in a browser (with a html page)/in the DOM and Node js that allows us to do it on the backend/run it like Python.
             <br>3. The most popular front-end js library was the jQuery library, which did all the checks and would run the right code for whatever browser was being used.
             <br>4. The most popular front-end js library now is React, which is open-source, and is used to build both desktop and mobile webpages. React native can help to load your web page/browser in a web application. Electrum makes VSC work with html, css, etc.
+        </p>
+        <h2>Answers Day 4:</h2>
+        <p>
+            1. AJAX stands for Asynchronous JS and XML that helps web pages to update content in real time, without having to fully reload it, which makes the page more responsive/interactive.
+            <br>2. We put our Javascript code into a separate file, mostly so we can use it in different files/web pages and so it's all in one place, separate from the html.
         </p>
     </main>
     <footer>
