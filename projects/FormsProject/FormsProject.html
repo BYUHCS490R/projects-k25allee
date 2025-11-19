@@ -11,8 +11,9 @@
         <h1>Forms Project</h1>
     </header>
     <main>
+        <div id="message"></div>
         <br>
-        <form action="Formresults.html" method="post">
+        <form action="Formresults.html" method="post" id="Form">
             <fieldset>
                 <legend>Info Box</legend>
                 <div class="rows">
@@ -27,6 +28,16 @@
                     <label for="passw">Password: </label>
                     <input type="password" name="passw" id="passw">
                 </div>
+                <div class="rows">
+                <label for="age">Age: </label>
+                <input type="text" name="age" id="age" list="age_options">
+                <datalist id="age_options">
+                    <option value="18"></option>
+                    <option value="19"></option>
+                    <option value="20"></option>
+                    <option value="21"></option>
+                </datalist>
+            </div>
                 <div class="rows">
                     <label for="date">Date: </label>
                     <input type="datetime-local" name="date" id="date">
@@ -61,6 +72,7 @@
                 </div>
             </div>
         </form>
+        <script src="Forms.js"></script>
     </main>
     <footer>
         <p>&copy; 2025 Alyssa Lee</p>
