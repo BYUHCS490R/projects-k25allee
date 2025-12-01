@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ORV: Author</title>
+    <link rel="stylesheet" href="Final.css">
 </head>
 <body>
     <header>
@@ -17,5 +18,72 @@
         <a href="Orvtrio.html">ORV Trio</a>
         <a href="Author.html" class="current">Author About</a>
     </nav>
+    <main>
+        <div id="message"></div>
+        <br>
+        <form action="Results.html" method="post" id="Form">
+            <fieldset>
+                <legend>Comments</legend>
+                <div class="qna">
+                    <label for="name">Name: </label>
+                    <input type="text" name="name" id="name" placeholder="Username">
+                </div>
+                <div class="qna">
+                    <label for="email">Email: </label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div class="qna">
+                    <label for="date">Date: </label>
+                    <input type="datetime-local" name="date" id="date">
+                </div>
+                <div class="qna">
+                    <label for="comments">Comments: </label>
+                    <textarea name="comments" id="comments"></textarea>
+                </div>
+                <div class="qnas">
+                    <div class="space"></div>
+                    <label><input type="radio" name="option" id="one">51%</label>
+                    <label><input type="radio" name="option" id="two">49%</label>
+                </div>
+                <div class="qna">
+                    <label for="favorite">Favorite Character: </label>
+                    <input type="text" name="favorite" id="favorite" list="fav_options">
+                    <datalist id="fav_options">
+                        <option value="KDJ">Kim Dokja</option>
+                        <option value="YJH">Yoo Joonghyuk</option>
+                        <option value="HSY">Han Sooyoung</option>
+                        <option value="YSA">Yoo Sangah</option>
+                        <option value="JHW">Jung Heewon</option>
+                        <option value="LHS">Lee Hyunsung</option>
+                        <option value="LGY">Lee Gilyoung</option>
+                        <option value="SYS">Shin Yoosoung</option>
+                        <option value="LJH">Lee Jihye</option>
+                        <option value="GPD">Gong Pildu</option>
+                        <option value="LSW">Lee Seolhwa</option>
+                        <option value="JHY">Jang Hayoung</option>
+                        <option value="U">Uriel</option>
+                        <option value="SW">Sun Wukong</option>
+                        <option value="ABFD">Abyssal Black Flame Dragon</option>
+                        <option value="SP">Secretive Plotter</option>
+                        <option value="PS">Persephone</option>
+                        <option value="OD">The Oldest Dream</option>
+                    </datalist>
+                </div>
+                <div class="qna">
+                    <label for="rating">Rate this Web Page on a scale of 1-5: </label>
+                    <input type="text" name="rating" id="rating">
+                </div>
+                <div class="qna">
+                    <div class="space"></div>
+                    <input type="submit" value="Submit">
+                </div>
+            </fieldset>
+        </form>
+        <script src="Form.js"></script>
+    </main>
+    <footer>
+        <br>
+        <p>&copy; 2025 Alyssa Lee</p>
+    </footer>
 </body>
 </html>

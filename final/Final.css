@@ -1,18 +1,22 @@
 body {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     margin: 0;
+    background-color: rgb(9, 7, 23);
+    color: white;
 }
 header {
     padding: 10px;
+    background-color: black;
 }
 header h1 {
     margin: 0;
+    background-color: black;
 }
 nav {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-
+    background-color: black;
 }
 nav a {
     text-decoration: none;
@@ -20,9 +24,10 @@ nav a {
     padding: 15px;
     text-align: center;
     font-size: 17px;
+    color: rgb(255, 245, 196);
 }
 .current {
-    color: black;
+    color: rgb(211, 203, 255);
 }
 nav a:hover {
     text-decoration: underline;
@@ -44,18 +49,19 @@ nav a:hover {
 /*Incarnations css */
 .table {
     border-spacing: 0;
-    border: thin solid;
+    border: thin solid black;
     text-align: center;
     margin: auto auto;
+    color: black;
 }
 .table td, .table th {
     padding: 10px;
 }
 .table thead tr {
-    background-color: aliceblue;
+    background-color: rgb(131, 156, 178);
 }
 .table tbody tr {
-    background-color: antiquewhite;
+    background-color: rgb(245, 244, 250);
 }
 .table tbody tr:nth-child(even){
     background-color: azure;
@@ -70,16 +76,18 @@ nav a:hover {
 .const {
     display: flex;
     flex-wrap: wrap;
+    
 }
 .info {
-    border: solid thin cornflowerblue;
+    border: solid thin #ffffff;
     border-radius: 3px;
     margin: 10px;
-    box-shadow: 2px 3px 4px black;
+    box-shadow: 3px 4px 4px rgb(155, 214, 252);
     width: 250px;
     padding: 10px;
     text-align: center;
-    background-color: aliceblue;
+    background-color: rgb(56, 190, 245);
+    color: #ffffff;
 }
 .info img {
     width: 100%;
@@ -91,4 +99,58 @@ nav a:hover {
     .info img {
         width: 100%;
     }
+}
+
+/*Author CSS */
+fieldset {
+    background-color: rgb(56, 190, 245);
+    box-shadow: 5px 5px 4px rgb(155, 214, 252);
+    border-radius: 3px;
+    width: 85%;
+    margin: auto;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+legend {
+    background-color: rgb(9, 7, 23);
+}
+.qna, .qnas {
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
+}
+.qna label {
+    width: 150px;
+    text-align: right;
+}
+.space {
+    width: 150px;
+    text-align: right;
+}
+.qna input:not([type='submit']), .qna datalist, .qna textarea {
+    padding: 3px 8px;
+    background-color: rgb(56, 190, 245);
+    color: #ffffff;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.qna input[type='submit'] {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 15px;
+    border-radius: 5px;
+    background-color: rgb(56, 190, 245);
+    color: #ffffff;
+}
+@media ONLY screen AND (max-width: 500px) {
+    .qna, .qnas {
+        flex-direction: column;
+    }
+    fieldset {
+        width: 95%;
+    }
+    .qna label, .space {
+        text-align: left;
+    }
+    .qna input[type='submit'] {
+    padding: 3px 2px;
+    font-size: 18px;
+}
 }
