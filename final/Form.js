@@ -4,10 +4,10 @@ document.getElementById('Form').addEventListener('submit',function(event) {
     const name = document.getElementById('name').value;
     const email = document.getElementById('email').value;
     const date = document.getElementById('date').value;
-    const comment = document.getElementById('com').value;
-    const joke = document.getElementById('joke').value;
-    const favorite = document.getElementById('favc').value;
-    const rating = document.getElementById('rate').value;
+    const comment = document.getElementById('comments').value;
+    const joke = document.getElementById('one', 'two').value;
+    const favorite = document.getElementById('favorite').value;
+    const rating = document.getElementById('rating').value;
 
     if (!name || !email) {
         alert("You need a name & email.")
@@ -41,7 +41,7 @@ document.getElementById('Form').addEventListener('submit',function(event) {
     }
 
     const xhr = new XMLHttpRequest();
-    xhr.open("GET", "SubmitM.json", true);
+    xhr.open("GET", "Submit.json", true);
     xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
     xhr.onreadystatechange = function(){
         if (xhr.readyState=== 4 && xhr.status === 200) {
