@@ -162,6 +162,9 @@ main a {
     margin-right: auto;
     text-align: center;
 }
+iframe {
+    border: 0;
+}
 fieldset {
     background-color: rgb(56, 190, 245);
     box-shadow: 5px 5px 4px rgb(155, 214, 252);
