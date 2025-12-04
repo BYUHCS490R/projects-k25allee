@@ -45,7 +45,7 @@ figcaption {
 main a {
     color: rgb(255, 245, 196);
 }
-@media ONLY screen AND (max-width: 500px) {
+@media ONLY screen AND (max-width: 650px) {
     nav {
         display: flex;
         flex-flow: column wrap;
@@ -59,7 +59,7 @@ main a {
     display: flex;
     justify-content: space-evenly;
 }
-@media ONLY screen AND (max-width: 500px) {
+@media ONLY screen AND (max-width: 650px) {
     .media {
         display: flex;
         flex-wrap: wrap;
@@ -70,7 +70,7 @@ main a {
 .world {
     display: flex;
 }
-@media ONLY screen AND (max-width: 500px) {
+@media ONLY screen AND (max-width: 650px) {
     .world {
         display: flex;
         flex-wrap: wrap;
@@ -127,7 +127,7 @@ main a {
 .info img {
     width: 100%;
 }
-@media ONLY screen AND (max-width: 500px) {
+@media ONLY screen AND (max-width: 650px) {
     .info {
         width: 100%;
         margin-left: auto;
@@ -151,7 +151,34 @@ main a {
         flex-wrap: wrap; 
     }
 }
-
+/*ORV trio */
+.infos {
+    border: solid thin #ffffff;
+    border-radius: 3px;
+    margin: 10px;
+    box-shadow: 3px 4px 4px rgb(155, 214, 252);
+    width: 300px;
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(56, 190, 245);
+    color: #ffffff;
+}
+.infos img {
+    width: 100%;
+}
+.triotext {
+    text-align: center;
+}
+.trio{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+@media ONLY screen AND (max-width: 650px) {
+    .infos {
+        width: 100%;
+    }
+}
 /*Author CSS */
 .logo {
     margin: 0;
