@@ -109,9 +109,7 @@ main a {
 }
 #pic {
     float: right;
-    padding: auto;
     font-style: italic;
-    top: -10;
 }
 .info {
     border: solid thin #ffffff;
